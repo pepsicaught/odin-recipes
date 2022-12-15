@@ -1,0 +1,98 @@
+/* style.css for odin-recipe */
+/* Universal Selector for the whole page */
+body {
+    font-family: "Times", "Times New Roman", sans-serif;
+    letter-spacing: 8px;
+    image-rendering: pixelated;
+    background-color: #d2738a;
+    color: white;
+    text-align: center;
+    list-style-position: inside; /* this centers the dot*/
+    line-height: 2; /* double space */
+    font-size: 14px;
+}
+h1 {
+    font-weight: normal;
+}
+.leaflet {
+    background-color: black;
+    position: absolute;
+    top: 15em;
+    left: 5%;
+    padding-top: 10em;
+    padding-left: 48px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    line-height: 1;
+}
+.list {
+    color: white;
+    list-style-type: none;
+}
+/* unvisited link */
+a:link {
+    color:rgb(239, 181, 255)
+}
+
+/* visited link */
+a:visited {
+    color:rgb(88, 49, 98)
+}
+
+.list .recipe:hover {
+    color: red;
+}
+.list .recipe {
+    transition: all 2s;
+}
+
+.article,
+.child,
+.leaflet {
+    filter: blur(.5px);
+    box-shadow: black 0px 5px 10px;
+}
+
+.recipe {
+    background-color: rgb(104, 12, 12);
+}
+
+.article {
+    background-color: black;
+    background-image: url(./img/bg_main.gif);
+    padding: 20px;
+    border: 3px solid red;
+}
+
+.child {
+    border: 2px solid red;
+    padding: 10px;
+    /* background-image: linear-gradient(to right, rgb(216, 60, 60), yellow); */
+    background-image: url(./img/bg_main.gif);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    color: white;
+}
+
+#asuka {
+    border-radius: 50%;
+    border: 1px solid red;
+    background-image: url(./img/bg_main.gif);
+    max-width: 30%;
+    height: auto;
+    filter: hue-rotate(180deg) blur(.5px);
+    box-shadow: black 0px 5px 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    opacity: 100%;
+    transition: 2s ease-in-out;
+
+}
+
+#asuka:hover {
+    filter: hue-rotate(0deg) blur(.5px);
+    opacity: 100%;
+
+}
+
